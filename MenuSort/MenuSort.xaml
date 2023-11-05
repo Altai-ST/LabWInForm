@@ -1,0 +1,23 @@
+﻿<Window x:Class="MenuSort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuSort"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="-1,-1,538,0">
+            <ComboBox x:Name="ListSort" Margin="9,85,9,318" FontFamily="Times New Roman" FontSize="16" SelectedIndex="0" SelectionChanged="SelectSort">
+                <ComboBoxItem Content="Блинная сортировка(PuncakeSort)"/>
+                <ComboBoxItem Content="Рандомная сортировка(Random sort)"/>
+                <ComboBoxItem Content="Циклическая сортировка"/>
+            </ComboBox>
+        </Border>
+        <Label Content="Выберите сортирповку" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="262,324,0,0" VerticalAlignment="Top" Width="100" Source="/teacher.png"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="262,0,0,115"/>
+        <TextBlock x:Name="NameSort" HorizontalAlignment="Left" Margin="431,324,0,0" TextWrapping="Wrap" Text="&#x9;&#x9;&#x9;" VerticalAlignment="Top" Height="22" Width="295" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
